@@ -48,18 +48,34 @@ public class SentenceGenerator {
 		nounsIt.add(new Word("Mädchen", verbs));
 		nounsIt.add(new Word("Erdferkel", verbs));
 		nounsIt.add(new Word("Meerschweinchen", verbs));
+		nounsIt.add(new Word("Alien", verbs));
 		
 		
 		verbs.add(new Word("sah", akkus));
 		verbs.add(new Word("traf", akkus));
 		verbs.add(new Word("hörte", akkus));
-		verbs.add(new Word("roch", akkus));
-		verbs.add(new Word("warf", akkus));
 		verbs.add(new Word("fragte", akkus));
 		verbs.add(new Word("beleidigte", akkus));
 		verbs.add(new Word("beschimpfte", akkus));
 		verbs.add(new Word("zeigte auf", akkus));
-		
+		verbs.add(new Word("lachte über", akkus));
+		verbs.add(new Word("provozierte", akkus));
+		verbs.add(new Word("überholte", akkus));
+		verbs.add(new Word("hetzte", akkus));
+		verbs.add(new Word("beklebte", akkus));
+		verbs.add(new Word("überzeugte", akkus));
+		verbs.add(new Word("erzählte über", akkus));
+		verbs.add(new Word("kletterte auf", akkus));
+		verbs.add(new Word("sprang über", akkus));
+		verbs.add(new Word("sprang auf", akkus));
+		verbs.add(new Word("flog über", akkus));
+		verbs.add(new Word("erblickte", akkus));
+		verbs.add(new Word("freute sich über", akkus));
+		verbs.add(new Word("belog", akkus));
+		verbs.add(new Word("verarschte", akkus));
+		verbs.add(new Word("lachte über", akkus));
+		verbs.add(new Word("überlistete", akkus));
+	
 		
 		akkus.add(new Akku("den", lastWordsMasc, "Bestimmter Artikel"));
 		akkus.add(new Akku("einen", lastWordsMasc, "Unbestimmter Artikel"));
@@ -109,10 +125,11 @@ public class SentenceGenerator {
 		
 		
 		lastWordsMasc.add(new Word("Opa.", null));
+		lastWordsMasc.add(new Word("Hund.", null));
 		lastWordsMasc.add(new Word("Mülleimer.", null));
 		lastWordsMasc.add(new Word("Tisch.", null));
-		lastWordsMasc.add(new Word("Rucksack.", null));
 		lastWordsMasc.add(new Word("Schrank.", null));
+		lastWordsMasc.add(new Word("Kuchen.", null));
 
 		lastWordsFem.add(new Word("Flasche.", null));
 		lastWordsFem.add(new Word("Katze.", null));

@@ -145,11 +145,11 @@ public class SentenceGenerator {
 
 	}
 
-	public List<Word> getSentence() {
+	public Sentence getSentence() {
 		randomize();
-		List<Word> sentence = new ArrayList<>();
-		addWord(firstWords.get(0), sentence);
-		return sentence;
+		List<Word> wordList = new ArrayList<>();
+		addWord(firstWords.get(0), wordList);
+		return new Sentence(wordList);
 	}
 
 	private void randomize() {

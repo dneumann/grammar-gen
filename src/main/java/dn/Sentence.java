@@ -10,7 +10,11 @@ public class Sentence {
 	
 	public Sentence(List<Word> wordList) {
 		boolean passedAkkuDativ = false;
+		String lastPart = "";
 		for (Word word : wordList) {
+			if (word instanceof Verb) {
+				lastPart = ((Verb)word).secondPartOfVerb;
+			}
 			if (word instanceof AkkuDativ) {
 				akkuDativ = (AkkuDativ) word;
 				passedAkkuDativ = true;
@@ -20,5 +24,6 @@ public class Sentence {
 				ending += word.w + " ";
 			}
 		}
+		ending = (ending + lastPart).trim() + ".";
 	}
 }
